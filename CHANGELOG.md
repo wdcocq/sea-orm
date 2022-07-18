@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.9.0 - Pending
+## 0.10.0 - Pending
+
+### House keeping
+
+* Remove unnecessary `async_trait` (#737)
+
+## 0.9.1 - Pending
+
+* [sea-orm-cli] Codegen support for `VarBinary` column type
+
+## 0.9.0 - 2022-07-17
 
 ### New Features
 
@@ -21,12 +31,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Added `TryFromU64` for `time` (#849)
 * Added `Insert::on_conflict` (#791)
 * Added `QuerySelect::join_as` and `QuerySelect::join_as_rev` (#852)
+* Include column name in `TryGetError::Null` (#853)
 * [sea-orm-cli] Improve logging (#735)
 * [sea-orm-cli] Generate enum with numeric like variants (#588)
 * [sea-orm-cli] Allow old pending migration to be applied (#755)
 * [sea-orm-cli] Skip generating entity for ignored tables (#837)
 * [sea-orm-cli] Generate code for `time` crate (#724)
 * [sea-orm-cli] Add various blob column types (#850)
+* [sea-orm-cli] Generate entity files with Postgres's schema name (#422)
 
 ### Upgrades
 
